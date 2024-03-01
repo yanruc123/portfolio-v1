@@ -1,6 +1,6 @@
 # Profolio-v1
 
-First, ensure you have [Node.js](https://nodejs.org/en) installed on your computer. This project requires Node.js to run and manage dependencies. This project is a customizable personal website template built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/). It's designed to be easy to use and adapt for your own professional profile, portfolio, or resume website.
+This project requires Node.js to run and manage dependencies. This project is a customizable personal website template built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/). It's designed to be easy to use and adapt for your own professional profile, portfolio, or resume website.
 
 ### A clean and responsive portfolio template!
 
@@ -15,6 +15,8 @@ and mobile design:
 <img src="/public/mobile-screen-page.png" alt="Mobile Design" title="Projects Table" width="230" height="425"/>
 
 ## Getting Started
+
+First, ensure you have [Node.js](https://nodejs.org/en) installed on your computer. 
 
 To get started with this template, follow these steps:
 
