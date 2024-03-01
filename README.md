@@ -7,9 +7,11 @@ First, ensure you have [Node.js](https://nodejs.org/en) installed on your comput
 ![Feature Overview](/public/demo.gif "Feature Overview")
 
 with a table to list all your projects:
+
 ![Feature Overview](/public/archive-screen-page.png "Projects Table")
 
 and mobile design:
+
 <img src="/public/mobile-screen-page.png" alt="Mobile Design" title="Projects Table" width="230" height="425"/>
 
 ## Getting Started
