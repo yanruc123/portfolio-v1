@@ -1,4 +1,4 @@
-# Profolio-v1
+# portfolio-v1
 
 This project requires Node.js to run and manage dependencies. This project is a customizable personal website template built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/). It's designed to be easy to use and adapt for your own professional profile, portfolio, or resume website.
 
