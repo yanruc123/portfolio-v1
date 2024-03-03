@@ -51,15 +51,19 @@ const ProjectArchive = () => {
               </td>
               {/* Mobile: Project Name with link */}
               <td className="px-6 py-4 text-sm text-gray-900 md:table-cell block md:hidden">
-                <a
-                  href={project.link}
-                  className="inline-flex items-center text-textMain hover:text-secondary group"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {project.name}
-                  <GoArrowUpRight className="ml-1" />
-                </a>
+                {project.link ? (
+                  <a
+                    href={project.link}
+                    className="inline-flex items-center text-textMain hover:text-secondary group"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {project.name}
+                    <GoArrowUpRight className="ml-1" />
+                  </a>
+                ) : (
+                  project.name
+                )}
               </td>
               <td className="px-6 py-4 text-sm text-gray-900 hidden lg:table-cell">
                 {project.madeAt}
@@ -68,22 +72,26 @@ const ProjectArchive = () => {
                 {project.buildWith.map((tool, toolIndex) => (
                   <span
                     key={toolIndex}
-                    className="inline-block bg-secondary text-white rounded-full px-3 py-1 text-sm mr-2 mb-2"
+                    className="inline-block bg-secondary text-white rounded-full px-3 py-1 text-sm mr-2 mb-2 whitespace-nowrap"
                   >
                     {tool}
                   </span>
                 ))}
               </td>
               <td className="px-6 py-4 text-sm hidden sm:table-cell">
-                <a
-                  href={project.link}
-                  className="inline-flex items-center text-textMain hover:text-secondary group"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {project.link}
-                  <GoArrowUpRight className="ml-1" />
-                </a>
+                {project.link !== "" && (
+                  <>
+                    <a
+                      href={project.link}
+                      className="inline-flex items-center text-textMain hover:text-secondary group"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {project.link.replace(/^https?:\/\//, '')}
+                      <GoArrowUpRight className="ml-1" />
+                    </a>
+                  </>
+                )}
               </td>
             </tr>
           ))}

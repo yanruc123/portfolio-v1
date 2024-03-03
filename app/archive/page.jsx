@@ -5,7 +5,7 @@ import { about } from "../custom/info";
 
 export default function Archive() {
   return (
-    <div className="bg-background h-screen px-5 sm:px-16 lg:px-28 py-20">
+    <div className="bg-background min-h-screen px-5 sm:px-16 lg:px-28 py-20">
       <div className="mb-8">
         <Link
           href="/"
